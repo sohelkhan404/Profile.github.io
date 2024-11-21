@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:'Arial Rounded MT Bold', Arial, sans-serif;
+  color: white;
+  background: url('web.jpg');
+background-repeat: repeat;
+background-size: 100%;
+
+}
+
+/* About Section Styling */
+.about-content {
+  text-align: center;
+  padding: 100px 20px;
+  color: #fff; /* White text */
+  line-height: 1.8;
+}
+
+.about-content h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #ff0000; /* Red heading */
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.about-content p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto 15px;
+}
+
+.about-content p:nth-of-type(1) {
+  font-style: italic; /* Adding italics for a personalized effect */
+}
+
+.about-content ul.highlights {
+  list-style: none;
+  padding: 0;
+  margin: 20px auto 0;
+  max-width: 600px;
+}
+
+.about-content ul.highlights li {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.about-content ul.highlights li strong {
+  color: #ff0000; /* Highlighted text in red */
+}
+
+/* Footer Styling */
+.footer {
+  text-align: center;
+  background-color: #000; /* Black background for the footer */
+  color: #fff;
+  padding: 15px 0;
+  font-size: 14px;
+}
+
+.footer p {
+  margin: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:'Arial Rounded MT Bold', Arial, sans-serif;
+  color: white;
+  background: url('web.jpg');
+background-repeat: repeat;
+background-size: 100%;
+
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: white;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff0000;
+}
+
+.navbar .menu {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  margin-left: auto; /* Pushes the menu to the right */
+}
+
+.navbar .menu a {
+  text-decoration: none;
+  color: #1f1f1f;
+  font-size: 16px;
+}
+
+/* dropdown menu css */
+/* Dropdown styles */
+.navbar .menu .dropdown {
+  position: relative; /* Ensures dropdown items are positioned relative to the parent */
+}
+
+.navbar .menu .dropdown .dropdown-menu {
+  display: none; /* Initially hidden */
+  position: absolute;
+  top: 100%; /* Positions the dropdown below the parent menu item */
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 10px 0;
+  min-width: 150px;
+  z-index: 1000;
+}
+
+.navbar .menu .dropdown .dropdown-menu li {
+  padding: 10px 20px;
+}
+
+.navbar .menu .dropdown .dropdown-menu li a {
+  text-decoration: none;
+  color: #1f1f1f;
+  font-size: 14px;
+  display: block;
+}
+
+.navbar .menu .dropdown .dropdown-menu li a:hover {
+  background-color: #f8f8f8;
+  color: #cc0000;
+}
+
+/* Show the dropdown menu on hover */
+.navbar .menu .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+.hire-btn {
+  background: #ff0000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-family: 'AvantGardeDemi', Arial, sans-serif;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 20px; /* Add space between the button and the menu */
+}
+.navbar .menu a:hover {
+  color: #cc0000; /* Change the text color on hover */
+}
+
+
+.hire-btn:hover {
+  background: #cc0000;
+}
+.navbar .logo img {
+  width: 50px; /* Adjust as needed */
+  height: auto;
+  margin-right: 15px; /* Add spacing between the logo and menu */
+}
+
