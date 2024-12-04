@@ -6,122 +6,134 @@
 }
 
 body {
-  font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+  font-family:'Arial Rounded MT Bold', Arial, sans-serif;
   color: white;
-  background: url('web.jpg') no-repeat center center fixed;
-  background-size: cover;
+  background: url('web.jpg');
+background-repeat: repeat;
+background-size: 100%;
+
 }
 
-/* Navbar */
 .navbar {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
-  background-color: white;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  padding: 15px 30px;
+  background: white;
 }
 
-.navbar .logo img {
-  width: 50px;
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff0000;
 }
 
-.menu {
-  display: flex;
+.navbar .menu {
   list-style: none;
-  gap: 20px;
+  display: flex;
+  gap: 50px;
+  margin-left: auto; /* Pushes the menu to the right */
 }
 
-.menu a {
+.navbar .menu a {
   text-decoration: none;
   color: #1f1f1f;
   font-size: 16px;
 }
 
-.dropdown {
-  position: relative;
+/* dropdown menu css */
+/* Dropdown styles */
+.navbar .menu .dropdown {
+  position: relative; /* Ensures dropdown items are positioned relative to the parent */
 }
 
-.dropdown-menu {
-  display: none;
+.navbar .menu .dropdown .dropdown-menu {
+  display: none; /* Initially hidden */
   position: absolute;
-  top: 100%;
+  top: 100%; /* Positions the dropdown below the parent menu item */
   left: 0;
-  background: white;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   list-style: none;
   padding: 10px 0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-width: 150px;
+  z-index: 1000;
 }
 
-.dropdown:hover .dropdown-menu {
+.navbar .menu .dropdown .dropdown-menu li {
+  padding: 10px 20px;
+}
+
+.navbar .menu .dropdown .dropdown-menu li a {
+  text-decoration: none;
+  color: #1f1f1f;
+  font-size: 14px;
   display: block;
 }
+
+.navbar .menu .dropdown .dropdown-menu li a:hover {
+  background-color: #f8f8f8;
+  color: #cc0000;
+}
+
+/* Show the dropdown menu on hover */
+.navbar .menu .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
 
 .hire-btn {
   background: #ff0000;
   color: white;
   border: none;
   padding: 10px 20px;
-  border-radius: 5px;
+  font-size: 13px;
+  font-family: 'AvantGardeDemi', Arial, sans-serif;
   cursor: pointer;
+  border-radius: 5px;
+  margin-left: 20px; /* Add space between the button and the menu */
 }
+.navbar .menu a:hover {
+  color: #cc0000; /* Change the text color on hover */
+}
+
+
+.hire-btn:hover {
+  background: #cc0000;
+}
+.navbar .logo img {
+  width: 50px; /* Adjust as needed */
+  height: auto;
+  margin-right: 15px; /* Add spacing between the logo and menu */
+}
+
 
 /* Hero Section */
 .hero {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   height: 80vh;
+  text-align: center;
+  background: url('abstract-pattern.png') center no-repeat;
+  background-size: cover;
+}
+
+.hero .logo-container {
   text-align: center;
 }
 
-.hero .logo-container img {
-  max-width: 100%;
-  height: auto;
-  margin: 10px 0;
+.hero .logo-image {
+  max-width: 280px;
+  margin-bottom: 20px;
 }
 
-/* Mobile Menu Toggle */
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
+.hero h1 {
+  font-size: 40px;
+  color: #ff0000;
 }
 
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-  .menu {
-    display: none;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-    background: white;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 999;
-  }
-
-  .menu.show {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  .hero {
-    height: auto;
-    padding: 20px;
-  }
-
-  .hero .logo-container img {
-    max-width: 80%;
-  }
+.hero .gra{
+  max-width: 280px;
+  margin-bottom: 20px;
 }
