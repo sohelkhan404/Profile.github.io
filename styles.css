@@ -125,6 +125,10 @@ body {
   .hero h1 {
     font-size: 1.5rem; /* Smaller text for mobile */
   }
+img {
+  max-width: 100%; /* Ensures the image width doesn’t exceed its container */
+  height: auto; /* Maintains aspect ratio */
+}
 
   .hero .logo-image {
     max-width: 200px; /* Adjust image size for smaller screens */
