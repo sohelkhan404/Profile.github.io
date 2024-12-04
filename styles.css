@@ -14,7 +14,8 @@ background-size: 100%;
 
 }
 .logo{
-  width: 100%
+  position: relative;
+  width: 100%;
 }
 
 .navbar {
