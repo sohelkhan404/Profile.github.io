@@ -12,6 +12,44 @@ body {
   background-repeat: repeat;
   background-size: cover;
 }
+/* Default navigation (desktop) */
+.menu {
+  display: flex;
+  gap: 50px;
+}
+
+.hamburger {
+  display: none; /* Hidden on desktop */
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .menu {
+    display: none; /* Hide menu on mobile */
+    flex-direction: column; /* Stack menu items vertically when shown */
+    background: white;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+  .menu.active {
+    display: flex; /* Show menu when toggled */
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger button on mobile */
+    color: #000;
+  }
+}
+
 
 /* Navbar */
 .navbar {
