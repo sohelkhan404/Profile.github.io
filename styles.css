@@ -13,6 +13,9 @@ background-repeat: repeat;
 background-size: 100%;
 
 }
+.log{
+  width: 100%
+}
 
 .navbar {
   display: flex;
