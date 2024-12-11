@@ -141,4 +141,23 @@ background-size: 100%;
   max-width: 280px;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 768px) {
+  .navbar .menu {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .navbar .logo img {
+    width: 50px;
+  }
+
+  .hero .logo-image {
+    max-width: 150px;
+  }
+
+  .navbar .hire-btn {
+    margin-top: 10px;
+  }
+}
 
